@@ -3,7 +3,7 @@ Below are the original directions for the assignment:
 
 Make a new program called pokemon.py that has a "Pokemon" class. In this program, "Pokemon" (objects of the class) will battle until only one is victorious. It will work similar to the Tournament program you have already created, but will read in names and elements of each Pokemon object from a file.
 
-Download the following data file: Pokemon.txtDownload Pokemon.txt
+Download the following data file: Pokemon.txt
 
 For pokemon.py you will read in the file to use the list of every Pokémon in the Pokédex, all 1025, each Pokémon is also paired with an Element.
 
@@ -18,8 +18,7 @@ In your program, make it so that every Pokemon "object" has its own name and ele
 
 Pokémon elements are stronger and weaker against other elements. When 2 Pokémon are in battle you will need to check if one element has an element advantage against the other. For example, from the chart below, a Pokemon with the Electric element cannot deal damage to a Pokemon with the Ground element. The chart explains what {0, 1/2, 2} means and how they are applied. You should make and fill a matrix within your code that determines element effectiveness; otherwise, you will have to use many, many if statements.
  
-Screenshot 2023-07-27 at 6.14.57 PM.png
-Another way you can write this chart is:
+
 [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0, 1, 1, 0.5, 1],
 [1, 0.5, 0.5, 1, 2, 2, 1, 1, 1, 1, 1, 2, 0.5, 1, 0.5, 1, 2, 1],
 [1, 2, 0.5, 1, 0.5, 1, 1, 1, 2, 1, 1, 1, 2, 1, 0.5, 1, 1, 1],
@@ -48,6 +47,4 @@ If neither Pokemon has an advantage or disadvantage, the winner is selected simi
 
 The best way to implement this is to create a matrix in your program that has the values of the table above. Then, instead of having dozens of if statements for all the element combinations, just have a lookup in the matrix (where row is the attacker's element and column is the defender's element) and give advantages or disadvantages accordingly.
  
-Your output to the terminal might look like this:
- 
-Screenshot 2023-07-27 at 6.36.47 PM.png
+
